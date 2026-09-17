@@ -327,6 +327,11 @@ h2.title em { font-style: italic; color: var(--teal); }
 .c-item .k { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
 .c-item .v { font-family: var(--serif); font-size: 26px; font-weight: 500; }
 .c-item .v a:hover { color: var(--teal); }
+.c-item .qr {
+  width: 172px; height: 172px; margin-top: 6px;
+  border: 1px solid var(--line); border-radius: 14px;
+}
+.c-item .qr-note { font-size: 13px; color: var(--ink-soft); opacity: 0.75; margin-top: 10px; }
 .form-card { background: var(--white); border: 1px solid var(--line); padding: 54px 50px; }
 .form-card h3 { font-family: var(--serif); font-weight: 500; font-size: 30px; margin-bottom: 8px; }
 .form-card > p { font-size: 14.5px; font-weight: 300; color: var(--ink-soft); margin-bottom: 34px; }
