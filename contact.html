@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Mingway Consulting</title>
+<meta name="description" content="Get in touch with Mingway Consulting — for hiring mandates and career conversations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav on-dark">
+  <a class="brand" href="index.html">
+    <span class="name">MINGWAY</span>
+    <span class="sub">Consulting</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="partner.html">Partner With Us</a></li>
+    <li><a href="cases.html">Case Studies</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="contact.html">Start a Conversation</a>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="partner.html">Partner With Us</a>
+  <a href="cases.html">Case Studies</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow reveal">Contact</p>
+    <h1 class="reveal reveal-d1">Hiring, or exploring <em>what's next?</em></h1>
+    <p class="lede-p reveal reveal-d2">Whether you're building a team or thinking about your own next chapter — leave us a message and we will read it carefully.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Reach Us Directly</p>
+        <div class="c-item">
+          <div class="k">Phone</div>
+          <div class="v"><a href="tel:+8615021338224">+86 150 2133 8224</a></div>
+        </div>
+        <div class="c-item">
+          <div class="k">Email</div>
+          <div class="v"><a href="mailto:hr@mingwayconsulting.com">hr@mingwayconsulting.com</a></div>
+        </div>
+        <div class="c-item">
+          <div class="k">Office</div>
+          <div class="v">Baoshan District, Shanghai</div>
+        </div>
+      </div>
+
+      <div class="form-card reveal reveal-d1">
+        <h3>Send an Enquiry</h3>
+        <p>Hiring need or career question — tell us briefly, and we'll come back to you.</p>
+        <form id="enquiry-form">
+          <div class="f-row">
+            <label for="f-subject">Subject *</label>
+            <input id="f-subject" type="text" required placeholder="e.g. Hiring need — Finance Director">
+          </div>
+          <div class="f-row">
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" placeholder="Your name">
+          </div>
+          <div class="f-row">
+            <label for="f-email">Email *</label>
+            <input id="f-email" type="email" required placeholder="you@company.com">
+          </div>
+          <div class="f-row">
+            <label for="f-message">Message *</label>
+            <textarea id="f-message" rows="5" required placeholder="A few lines about your requirement…"></textarea>
+          </div>
+          <button class="btn btn-solid" type="submit">Send <span class="arrow">→</span></button>
+          <p class="form-note">This opens your email client with the message pre-filled, addressed to hr@mingwayconsulting.com.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="name">MINGWAY</span>
+          <span class="sub">Consulting</span>
+        </a>
+        <p class="f-desc">A boutique recruitment consultancy in Shanghai — mid-to-senior executive search and project-based recruitment, delivered with a growth mindset.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="partner.html">Partner With Us</a></li>
+          <li><a href="cases.html">Case Studies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+8615021338224">+86 150 2133 8224</a></li>
+          <li><a href="mailto:hr@mingwayconsulting.com">hr@mingwayconsulting.com</a></li>
+          <li>Baoshan District, Shanghai</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Mingway (Shanghai) Talent Consulting Co., Ltd. All rights reserved.</span>
+      <span>Your Growth, Our Measure.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var subject = document.getElementById('f-subject').value.trim();
+  var name = document.getElementById('f-name').value.trim();
+  var email = document.getElementById('f-email').value.trim();
+  var message = document.getElementById('f-message').value.trim();
+  var body = message + '\n\n— ' + (name || 'Name not given') + ' (' + email + ')';
+  window.location.href = 'mailto:hr@mingwayconsulting.com?subject=' +
+    encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
