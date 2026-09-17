@@ -364,6 +364,12 @@ h2.title em { font-style: italic; color: var(--teal); }
 .cta-band p { margin: 22px auto 0; max-width: 520px; font-weight: 300; color: rgba(255,255,255,0.82); }
 .cta-band .btn { margin-top: 44px; background: var(--ink); color: var(--cream); }
 .cta-band .btn:hover { background: #000; }
+.cta-band .qr {
+  width: 128px; height: 128px; margin: 40px auto 0;
+  border-radius: 12px; border: 1px solid rgba(255,255,255,0.35);
+  background: #fff; padding: 6px;
+}
+.cta-band .qr-note { margin-top: 12px; font-size: 12.5px; letter-spacing: 0.08em; color: rgba(255,255,255,0.8); }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--ink); color: rgba(247,244,238,0.62); padding: 90px 48px 40px; }
