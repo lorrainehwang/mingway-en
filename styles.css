@@ -388,6 +388,8 @@ h2.title em { font-style: italic; color: var(--teal); }
   padding-top: 34px; font-size: 12px; letter-spacing: 0.06em;
   color: rgba(247,244,238,0.4);
 }
+.footer-bottom a { color: inherit; }
+.footer-bottom a:hover { color: var(--cream); }
 
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(34px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
