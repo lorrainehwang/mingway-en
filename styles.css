@@ -228,7 +228,7 @@ h2.title em { font-style: italic; color: var(--teal); }
 .matrix-card .glyph {
   font-family: var(--serif); font-style: italic; font-size: 30px; color: var(--teal);
 }
-.matrix-card h3 { font-family: var(--serif); font-weight: 500; font-size: 23px; line-height: 1.25; margin-top: 22px; }
+.matrix-card h3 { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.25; margin-top: 22px; min-height: 2.5em; text-wrap: balance; }
 .matrix-card span { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); opacity: 0.7; margin-top: 8px; }
 
 /* ---------- About ---------- */
